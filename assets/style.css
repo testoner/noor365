@@ -166,7 +166,8 @@ header h2{
 main{
     max-width: 848px;
     width: 100%;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 main .title{
@@ -286,3 +287,108 @@ main .question-block form button:hover img{
     transition: all 0.5s;
 }
 
+@media (max-width:1080px) {
+
+    .edit-btn{
+        margin-bottom: 20px;
+    }
+
+    main{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    
+    main .faq{
+        flex-wrap: wrap;
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+
+    main .question-block form{
+        column-gap: 20px;
+    }
+}
+
+@media (max-width:700px) {
+
+    main .faq{
+        justify-content: center;
+    }
+
+    header{
+        padding-bottom: 0px;
+        padding-left: 25px;
+    }
+
+    header .logo{
+        margin-right: 35px;
+    }
+
+    header h2{
+        font-size: 18px;
+    }
+
+    .edit-btn{
+        margin-bottom: 15px;
+    }
+
+    main .title h2{
+        font-size: 28px;
+    }
+
+    main .faq{
+        margin: 25px 0;
+    }
+}
+
+@media (max-width:747px){
+    .app{
+        background-image: none;
+    }
+    main .faq section{
+        width: 100%;  
+    }
+
+    main .faq section:hover{
+        transform: rotate(2deg);
+    }
+
+    main .question-block form .input-block input{
+        font-size: 14px;
+    }
+
+    main .question-block form .input-block input::placeholder{
+        font-size: 14px;
+    }
+
+    main .question-block form .input-block img{
+        width: 32px;
+        right: 8px;
+    }
+    main .question-block form .input-block input{
+        height: 48px;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 360px){
+    header h2{
+        font-size: 16px;
+    }
+
+    main .title h2{
+        font-size: 24px;
+    }
+
+    main .faq section h3{
+        font-size: 20px;
+    }
+    
+    main .question-block form .input-block input{
+        font-size: 12px;
+    }
+
+    main .question-block form .input-block input::placeholder{
+        font-size: 12px;
+    }
+}
